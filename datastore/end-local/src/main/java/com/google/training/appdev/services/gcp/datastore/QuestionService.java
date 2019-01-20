@@ -46,29 +46,4 @@ public class QuestionService {
 
         return array;
     }
-
-
-/* TODO: Uncomment this block
-
-    private List<Question> buildQuestions(Iterator<Entity> entities){
-        List<Question> questions = new ArrayList<>();
-        entities.forEachRemaining(entity-> questions.add(entityToQuestion(entity)));
-        return questions;
-    }
-
-    private Question entityToQuestion(Entity entity){
-        return new Question.Builder()
-                .withQuiz(entity.getString(Question.QUIZ))
-                .withAuthor(entity.getString(Question.AUTHOR))
-                .withTitle(entity.getString(Question.TITLE))
-                .withAnswerOne(entity.getString(Question.ANSWER_ONE))
-                .withAnswerTwo(entity.getString(Question.ANSWER_TWO))
-                .withAnswerThree(entity.getString(Question.ANSWER_THREE))
-                .withAnswerFour(entity.getString(Question.ANSWER_FOUR))
-                .withCorrectAnswer(entity.getLong(Question.CORRECT_ANSWER))
-                .withId(entity.getKey().getId())
-                .build();
-    }
-
-*/
 }
